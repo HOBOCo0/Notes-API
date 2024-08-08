@@ -7,15 +7,10 @@
 
 ## Features
 
-User can :
-- Signup/Signin.
-Users can create an account or log in to access their personalized dashboard.
-- Add Notes
-Users can easily create and format new notes with text.
-- Save/Delete Notes
-Notes can be saved securely, organized, and deleted when no longer needed.
-- Edit Notes
-Users can edit existing notes, update content, and save changes seamlessly.       
+- Signup/Signin : Users can create an account or log in to access their personalized dashboard.
+- Add Notes : Users can easily create and format new notes with text.
+- Save/Delete Notes : Notes can be saved securely, organized, and deleted when no longer needed.
+- Edit Notes : Users can edit existing notes, update content, and save changes seamlessly.       
 
 
 ## API Server
