@@ -20,7 +20,7 @@ Users can edit existing notes, update content, and save changes seamlessly.
 
 ## API Server
 
-```http
+```https
 https://notes-api-1140.onrender.com/
 ```
 
@@ -28,7 +28,7 @@ https://notes-api-1140.onrender.com/
 
 #### Signup
 
-```http
+```https
 POST/users/signup
 ```
 Returns a user with unique id and token.
@@ -40,7 +40,7 @@ Returns a user with unique id and token.
 | `password`| `string` | **Required**. password      |
 
 Response
-```http
+```https
   {
      user: {
         username: string
@@ -58,7 +58,7 @@ Response
 
 #### Signin
 
-```http
+```https
 POST/users/signin
 ```
 Returns a user with unique id and token.
@@ -69,7 +69,7 @@ Returns a user with unique id and token.
 | `password`| `string` | **Required**. password      |
 
 Response
-```http
+```https
   {
     user: {
         username: string
@@ -85,7 +85,7 @@ Response
 ```
 
 #### View all notes
-```http
+```https
 GET/note
 ```
 Returns list of notes. 
@@ -95,7 +95,7 @@ Returns list of notes.
 | `token`   | `string` | **Required**. token for authentication and authorization to fetch the data of user|
 
 Response
-```http
+```https
 // list containing one or more notes
   [{
         _id: string
@@ -108,7 +108,7 @@ Response
     }]
 ```
 #### Add Notes
-```http
+```https
 POST/note
 ```
 Rturns new added notes.
@@ -120,7 +120,7 @@ Rturns new added notes.
 | `description`| `string` | **Required**. description of the notes.      |
 
 Response
-```http
+```https
   {
       _id: string
         title: string
@@ -132,7 +132,7 @@ Response
 }
 ```
 #### Edit Notes
-```http
+```https
 PUT/note/{noteId}
 ```
 Returns updated note.
@@ -144,7 +144,7 @@ Returns updated note.
 | `description`| `string` | **Optional**. updated description of the notes.      |
 
 Response
-```http
+```https
   {
        _id: string
         title: string
@@ -158,7 +158,7 @@ Response
 
 
 #### Delete Notes
-```http
+```https
 DELETE/note/{noteId}
 ```
 Returns deleted note
@@ -167,7 +167,7 @@ Returns deleted note
 | `noteId`   | `string` | **Required**. unique note id which is generate for each note when created     |
 
 Response
-```http
+```https
 {
  _id: string
         title: string
